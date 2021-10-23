@@ -1,0 +1,67 @@
+.white-text{
+    color: white;
+}
+
+.center-block {
+    text-align: center;
+ }
+
+.presentation .testo{
+    padding: 3rem;
+}
+@media screen and (min-width:768px){
+    .presentation .testo{
+        padding: 7rem;
+        
+    }
+}
+
+.rounded-corners{
+    border-radius:60px;
+}
+@media screen and (max-width:550px){
+    .rounded-corners{
+        border-radius:40px;
+    }
+}
+
+.buffered { margin:1.5rem; }
+@media screen and (max-width:400px){
+    .buffered { margin:.5rem; }
+}
+
+.auto-typing-div { min-height: 100px; }
+
+
+.light-blue-border{
+    border: 5px solid 
+    #f0fcfc;
+    padding: 0;
+}
+
+footer{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    margin-top: 4rem;
+}
+
+.footer-icon{
+    font-size: 30px;
+}
+
+#land-home{
+    background-image: url('../res/me.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px; /* aggiunge padding solo a dx e sx */
+}
+
+#land-home h1{
+    font-size: 60px;
+}
+@media screen and (min-width:768px){
+    #land-home h1 { font-size: 80px; }
+}

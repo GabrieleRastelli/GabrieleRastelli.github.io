@@ -1,0 +1,91 @@
+.polaroid{
+  border: 1em solid #fff;
+  border-bottom: 4em solid #fff;
+  border-radius: .25em;
+  box-shadow: 1em 1em 2em .25em rgba(0,0,0,.2);
+  max-width: 500px;
+  opacity: 0;
+  -webkit-transform: translateY(4em) rotateZ(-5deg);
+          transform: translateY(4em) rotateZ(-5deg);
+  -webkit-transition: opacity .3s .25s ease-out,
+              -webkit-transform 4s .25s cubic-bezier(0,1,.3,1);
+  transition: opacity .3s .25s ease-out,
+              -webkit-transform 4s .25s cubic-bezier(0,1,.3,1);
+  transition: transform 4s .25s cubic-bezier(0,1,.3,1),
+              opacity .3s .25s ease-out;
+  transition: transform 4s .25s cubic-bezier(0,1,.3,1),
+              opacity .3s .25s ease-out,
+              -webkit-transform 4s .25s cubic-bezier(0,1,.3,1);
+              
+  width: 90%;
+
+  will-change: transform, opacity;
+  
+}
+
+
+
+.inline-photo {
+  box-shadow: 1em 1em 2em .25em rgba(0,0,0,.2);
+  max-width: 500px;
+  opacity: 0;
+  -webkit-transform: translateY(4em) rotateZ(-5deg);
+          transform: translateY(4em) rotateZ(-5deg);
+  -webkit-transition: opacity .3s .25s ease-out,
+              -webkit-transform 4s .25s cubic-bezier(0,1,.3,1);
+  transition: opacity .3s .25s ease-out,
+              -webkit-transform 4s .25s cubic-bezier(0,1,.3,1);
+  transition: transform 4s .25s cubic-bezier(0,1,.3,1),
+              opacity .3s .25s ease-out;
+  transition: transform 5s .25s cubic-bezier(0,1,.3,1),
+              opacity .3s .25s ease-out,
+              -webkit-transform 4s .25s cubic-bezier(0,1,.3,1);
+              
+  width: 90%;
+
+  will-change: transform, opacity;
+
+
+}
+
+.app-home-image{
+  max-width: 400px;
+}
+
+
+.inline-photo.is-visible, .polaroid.is-visible{
+  
+  opacity: 1;
+  -webkit-transform: rotateZ(-2deg);
+          transform: rotateZ(-2deg);
+}
+
+.animation{
+  -webkit-animation: fadeout 0.2s linear 1 normal forwards;
+  -webkit-animation: fadein 0.2s linear 1 normal forwards;
+}
+
+
+
+@-webkit-keyframes fadeout{
+  from{
+     opacity: 1;
+     transform: scale(1.0) rotate(-2deg);
+  }
+  to{
+      opacity: 0.3;
+      transform: scale(0.9) rotate(-2deg);
+  }
+}
+
+
+@-webkit-keyframes fadein{
+  from{
+     opacity: 0.3;
+     transform: scale(0.9) rotate(-2deg);
+  }
+  to{
+      opacity: 1;
+      transform: scale(1) rotate(-2deg);
+  }
+}
