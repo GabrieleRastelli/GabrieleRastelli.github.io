@@ -39,8 +39,7 @@
 
       <header id="land-home" class="head-banner d-flex justify-content-center white-text text-center">
         <h1 class="rellax" data-rellax-speed="-1.5">Gabriele Rastelli</h1>
-        <p class="rellax" data-rellax-speed="-1.5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris in nibh non lectus
-          tristique ornare in sed erat.</p>
+        <p class="rellax" data-rellax-speed="-1.5">A young computer engineering student with the passion for software development.</p>
         <a class="rellax" data-rellax-speed="-1.5" href="#self-presentation"><button type="button" class="btn btn-outline-light" >Tell me more</button></a>
       </header>
 
@@ -48,7 +47,7 @@
 
         <div class="col-lg-6 h-100 order-lg-2 d-flex justify-content-center">
           <div class="image">
-            <img src="res/me.png" class="polaroid show-on-scroll">
+            <img src="res/me_in_florence.png" class="polaroid show-on-scroll">
           </div>
           
         </div>
@@ -58,9 +57,9 @@
             <h1>Hi, I'm Gabriele. I am a <span class="type"></span></h1>
           </div>
           <p>Let me introduce myself. I'm a 21 years old guy with the passion for computer and, more specifically, for programming.</p>
-          <p>I spend most of my free time in gym or out with my friends.</p>
-          <p>I'm a great sports fan, because I'm impressed when i see what people like greath athletes can achieve with their stunning work and training, 
-            and movie fan because movies have the power to let you feel as if you were thousands miles away from your soft sofa with just a short scene and i love that feeling.</p>
+          <p>I started my career focusing on Java and other object oriented programming languages, which I used to build games and apps.
+            Then I also started to experiment some front-end languages and frameworks, like Bootstrap for example, and I'm now trying to combine those skills to build things I didn't even imagine before.</p>
+          <p></p>
           <p>That's it, hope you enjoy my website. :)</p>
 
         </div>
@@ -74,11 +73,12 @@
 
         <div class="col-lg-6 h-100 testo">
           <h1>My personal projects</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris in nibh non lectus
-            tristique ornare in sed erat. In rhoncus elementum justo. Vestibulum non erat et ex iaculis feugiat. Lorem
-            ipsum dolor sit amet, consectetur adipiscing elit. Aliquam felis ligula, dapibus a semper ut, suscipit in
-            leo. Ut ac vehicula lectus.</p>
-
+          <p>The project which I'm most proud of the app that I built with my friend Mattia Gualtieri which is "My Training Schedules".</p>
+          <p>It's been created with the purpose of allowing you to bring your schedules wherever you want in an easier and more flexible way than printing them on a paper sheet.
+             We then added some interesting functions like the possibility to share your schedules with your friends, search for new ones from the suggested and most popular ones.
+             In the end we were also able to build a simple training tracking system which helps you during your workouts.
+          </p>
+          <p>The app is now available on the Google Play store, you can click on the app image to get redirected to it.</p>
         </div>
       </div>
 
@@ -90,11 +90,7 @@
 
         <div class="col-lg-6 h-100 order-lg-1 testo">
           <h1>My resumè</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris in nibh non lectus
-            tristique ornare in sed erat. In rhoncus elementum justo. Vestibulum non erat et ex iaculis feugiat. Lorem
-            ipsum dolor sit amet, consectetur adipiscing elit. Aliquam felis ligula, dapibus a semper ut, suscipit in
-            leo. Ut ac vehicula lectus.</p>
-
+          <p>If you're intested to know more about me you can download my CV by clicking on its image.</p>
         </div>
       </div>
 
@@ -107,7 +103,7 @@
             <div class="col-lg-6 h-100 text-center text-lg-right">
               <ul class="list-inline mb-0">
                 <li class="list-inline-item mr-3"><a href="https://www.instagram.com/gabrielerastelli_/?hl=it"><i class="fab fa-instagram footer-icon bg-white text-dark"></i></a></li>
-                <li class="list-inline-item"><a href="https://t.me/Gabriele_Rastelli"></a><i class="fab fa-telegram-plane footer-icon bg-white text-dark"></i></li>
+                <li class="list-inline-item"><a href="https://telegram.me/Gabriele_Rastelli"><i class="fab fa-telegram-plane footer-icon bg-white text-dark"></i></a></li>
                 <li class="list-inline-item mr-3"><a href="https://it-it.facebook.com/gabriele.rastelli.5"><i class="fab fa-facebook-f footer-icon bg-white text-dark"></i></a></li>
               </ul>
             </div>
@@ -140,6 +136,7 @@
         element.classList.add('animation'); // start animation
         setTimeout(function (){
           element.classList.remove('animation');
+          window.open('https://play.google.com/store/apps/details?id=com.pomegranatesoftware.mytrainingschedules', '_blank');
         }, 400);
         
       }

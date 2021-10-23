@@ -59,9 +59,23 @@ footer{
     padding: 0 20px; /* aggiunge padding solo a dx e sx */
 }
 
+@media screen and (min-width:700px){
+    #land-home{
+        background-image: url('../res/landing.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 20px; /* aggiunge padding solo a dx e sx */
+    }
+}
+
 #land-home h1{
     font-size: 60px;
 }
 @media screen and (min-width:768px){
     #land-home h1 { font-size: 80px; }
 }
+
+
