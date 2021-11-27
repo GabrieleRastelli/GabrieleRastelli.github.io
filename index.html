@@ -68,7 +68,7 @@
       <div class="row buffered flex-fill no-gutters">
 
         <div class="col-lg-6 h-100  d-flex justify-content-center">
-          <img id="app-img" src="res/app.png" class="inline-photo app-home-image show-on-scroll rounded-corners" onclick="resizeApp()">
+          <img id="app-img" src="res/app.png" class="inline-photo app-home-image show-on-scroll rounded-corners" onclick="resizeItem('app-img', 'https://play.google.com/store/apps/details?id=com.pomegranatesoftware.mytrainingschedules')">
         </div>
 
         <div class="col-lg-6 h-100 testo">
@@ -79,8 +79,9 @@
              In the end we were also able to build a simple training tracking system which helps you during your workouts.
           </p>
           <p>The app is now available on the Google Play store.</p>
+          <p>And of course, if you're interested, you can find all of my projects on my GitHub.</p>
           <div class="d-flex justify-content-center">
-            <a href="https://play.google.com/store/apps/details?id=com.pomegranatesoftware.mytrainingschedules" class="btn btn-outline-dark">Take me there</a>
+            <a href="https://github.com/GabrieleRastelli" class="btn btn-outline-dark">Take me there</a>
           </div>
         </div>
       </div>
@@ -88,7 +89,7 @@
       <div class="row buffered flex-fill no-gutters ">
 
         <div class="col-lg-6 h-100 order-lg-2 container  d-flex justify-content-center">
-          <img id="resume-img" src="res/resume.png" class="light-blue-border inline-photo show-on-scroll" onclick="resizeResume()">
+          <img id="resume-img" src="res/resume.png" class="light-blue-border inline-photo show-on-scroll" onclick="resizeItem('resume-img', 'res/resume.pdf')">
         </div>
 
         <div class="col-lg-6 h-100 order-lg-1 testo">
@@ -108,9 +109,10 @@
             </div>
             <div class="col-lg-6 h-100 text-center text-lg-right">
               <ul class="list-inline mb-0">
-                <li class="list-inline-item mr-3"><a href="https://www.instagram.com/gabrielerastelli_/?hl=it"><i class="fab fa-instagram footer-icon bg-white text-dark"></i></a></li>
+                <li class="list-inline-item"><a href="https://github.com/GabrieleRastelli"><i class="fab fa-github footer-icon bg-white text-dark"></i></a></li>
+                <li class="list-inline-item"><a href="https://www.instagram.com/gabrielerastelli_/?hl=it"><i class="fab fa-instagram footer-icon bg-white text-dark"></i></a></li>
                 <li class="list-inline-item"><a href="https://telegram.me/Gabriele_Rastelli"><i class="fab fa-telegram-plane footer-icon bg-white text-dark"></i></a></li>
-                <li class="list-inline-item mr-3"><a href="https://it-it.facebook.com/gabriele.rastelli.5"><i class="fab fa-facebook-f footer-icon bg-white text-dark"></i></a></li>
+                <li class="list-inline-item"><a href="https://it-it.facebook.com/gabriele.rastelli.5"><i class="fab fa-facebook-f footer-icon bg-white text-dark"></i></a></li>
               </ul>
             </div>
           </div>
@@ -133,30 +135,16 @@
         loop: true,
       });
 
-      function resizeApp(){
-        console.log("Clicked App");
-        const element = document.getElementById('app-img')
+      function resizeItem(itemId, linkToOpen){
+        console.log("Clicked Item: "+itemId);
+        const element = document.getElementById(itemId)
 
         element.classList.remove('animation'); // reset animation
         void element.offsetWidth; // trigger reflow
         element.classList.add('animation'); // start animation
         setTimeout(function (){
           element.classList.remove('animation');
-          window.open('https://play.google.com/store/apps/details?id=com.pomegranatesoftware.mytrainingschedules', '_blank');
-        }, 400);
-        
-      }
-
-      function resizeResume(){
-        console.log("Clicked Resume");
-        const element = document.getElementById('resume-img')
-
-        element.classList.remove('animation'); // reset animation
-        void element.offsetWidth; // trigger reflow
-        element.classList.add('animation'); // start animation
-        setTimeout(function (){
-          element.classList.remove('animation');
-          window.open('res/resume.pdf', '_blank'); // reset animation, this way after click image as still that fade-in animation when scrolling
+          window.open(linkToOpen, '_blank'); // reset animation, this way after click image as still that fade-in animation when scrolling
         }, 400);
         
       }
