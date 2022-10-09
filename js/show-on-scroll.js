@@ -1,5 +1,5 @@
 window.addEventListener('scroll', function () {
-    console.log("Scrolling'");
+    //console.log("Scrolling'");
 });
 
 // Detect request animation frame
